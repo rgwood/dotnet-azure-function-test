@@ -17,5 +17,10 @@ namespace Reilly.Function
 
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
+
+        public static bool ReturnTrueForUnitTest()
+        {
+            return true;
+        }
     }
 }
