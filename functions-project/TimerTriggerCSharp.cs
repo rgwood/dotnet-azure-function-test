@@ -13,7 +13,7 @@ namespace Reilly.Function
         {
             var dt = new DateTime();
 
-            log.LogInformation($"JSON: {JsonConvert.SerializeObject(dt)}");
+            log.LogInformation($"JSON test: {JsonConvert.SerializeObject(dt)}");
 
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
