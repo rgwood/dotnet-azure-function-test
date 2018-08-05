@@ -20,9 +20,7 @@ dotnet sln add test-project/test-project.csproj
 
 #### How to deploy
 
-First, build+publish a release build: `dotnet publish -c Release`
-
-Then, use the Deploy to Function App command and tell it to use the directory at `functions-project/bin/Release/netstandard2.0/publish`
+Use the Deploy to Function App command and tell it to use the directory at `functions-project/bin/Release/netstandard2.0/publish` (if this doesn't exist already, you may need to run `dotnet publish`).
 
 This is a fairly manual process. Next up, I'd like to look into [continuous deployment](https://docs.microsoft.com/en-us/azure/azure-functions/functions-continuous-deployment).
 
